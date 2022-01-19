@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="#">
+    <script src="https://kit.fontawesome.com/325c6d981f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <div class="heading">
+                31072-DuonggNauWn
+            </div>
+            <div class="time">NhaccuaDang</div>
+
+            <img src="/music-player/img/0.jpg" alt="ảnh">
+
+            <title style="color: blue"></title>
+            <div class="player">
+                <!-- <i class="fas fa-play"></i> -->
+                <i class="fas fa-redo"></i>
+                <i class="fas fa-fast-backward"></i>
+                <i class="fas fa-pause playOrPause"></i>
+                <i class="fas fa-fast-forward"></i>
+                <i class="fas fa-random"></i>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="250">
+        </div>
+
+        <audio src="/music-player/music/0.mp3"></audio>
+
+        <div class="footer">
+        </div>
+    </div>
+    <script src="/music-player/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif
+}
+#main{
+    width: 250px;
+    margin: auto;
+}
+
+/* css phần player */
+.header{
+    padding-top: 24px;
+    box-shadow: 0 0 2px 2px #ccc;
+    position:fixed;
+    width: 250px;
+    background: url(https://cdn2.vectorstock.com/i/1000x1000/82/91/music-wave-vector-7208291.jpg) center no-repeat;
+    text-align: center;
+}
+.heading{
+    height: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color:rgb(189, 95, 95)
+}
+
+img{
+    width: 150px;
+    border-radius: 75px;
+}
+
+.player{
+    margin-top:20px;
+    font-size: 24px
+}
+.fas{
+    padding:8px;
+    margin-bottom: 8px;
+}
+.fas:hover{
+    cursor: pointer;
+    background-color: pink ;
+    border-radius: 30px;
+}
+.fa-pause, .fa-play{
+    font-size: 30px;
+}
+.time{
+    color: blue;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 700;
+}
+
+/* css list nhạc */
+.footer{
+    padding-top: 360px;
+    font-weight: 700;
+    background-color: #ccc;
+}
+.listMusic{
+    color: rgb(107, 103, 103);
+    background-color:#fff;
+    margin: 8px;
+    padding: 8px;
+    height: 60px;
+    border-radius: 10px;
+}
+.listMusic:hover{
+    background-color: pink;
+    color:#000;
+    cursor: pointer;
+}
+
+.progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: #ec1f55;
+    cursor: pointer;
+    border-radius: 6px;
+}
+  
+
+@keyframes changeLine{
+    from {left: 0px}
+    to {left: 238px}
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
